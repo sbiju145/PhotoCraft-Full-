@@ -1,0 +1,18 @@
+[package]
+name = "photocraft-doc"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+photocraft-geom = { workspace = true }
+photocraft-color = { workspace = true }
+photocraft-raster = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+# LayerId is plain data (the Layers panel keys its rows by it): the marker and its derive, without the UI.
+craft-tracked = { workspace = true }
+craft-ui-macros = { workspace = true }

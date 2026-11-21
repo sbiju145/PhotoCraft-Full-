@@ -1,0 +1,13 @@
+[package]
+name = "photocraft-ipp"
+description = "A small IPP client for CUPS (list printers, default printer, print a PDF), pure Rust, no dependencies"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+craft-ipp = { git = "https://github.com/storytold/craft-libs", rev = "683fe06031224725b913c8ad3697d8e8bfec6c90" }
+
+[lints]
+workspace = true
