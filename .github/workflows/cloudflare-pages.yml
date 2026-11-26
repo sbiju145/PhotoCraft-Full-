@@ -27,7 +27,7 @@ jobs:
       PHOTOCRAFT_WEB_WASM_OPT_CONVERGE: "0"
     steps:
       - name: Checkout PhotoCraft
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install Rust and WebAssembly target
         uses: dtolnay/rust-toolchain@stable
@@ -82,7 +82,7 @@ jobs:
           echo "Deployable site prepared: $(du -sh public | cut -f1)"
 
       - name: Upload static site artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: photocraft-cloudflare-pages
           path: public/
